@@ -72,7 +72,7 @@ Boxplot analysis suggests that there could be disparities in the distribution of
 In the data preprocessing phase, several essential steps were taken to prepare the dataset for machine learning modeling. These steps included calculating the population per square mile, selecting relevant columns, creating dummy variables for categorical features, standardizing numeric attributes, and encoding the target variable.
 
 ## 5. Modeling & Evaluation
-[Modelling Report](https://github.com/chicofanito/Capstone-2/blob/076e87994a52d55b0afb9871d50bf36c89e0c72c/data/Capstone%202%20-%20Substance%20Use%20Treatment%20-%20Modeling.ipynb)
+[Modeling Report](https://github.com/chicofanito/Capstone-2/blob/076e87994a52d55b0afb9871d50bf36c89e0c72c/data/Capstone%202%20-%20Substance%20Use%20Treatment%20-%20Modeling.ipynb)
 
 This is a classification problem as we are trying to predict treatment outcomes (complete or incomplete). I explored these
 conventional machine learning models to build the model and compare performances:
