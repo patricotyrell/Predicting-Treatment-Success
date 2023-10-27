@@ -29,7 +29,7 @@ ultimately addressing unmet treatment needs.
 The project utilized data from the Treatment Episode
 Data Set: Discharge (TEDS-D), sourced from the
 Substance Abuse and Mental Health Services
-Administration (SAMHSA). Data regarding the number of treatment facilities and response rates was extracted from SAMHSA's PDF reports. Additionally, population statistics and geographical details were sourced from Wikipedia. Links to these information are listed below:
+Administration (SAMHSA). Data regarding the number of treatment facilities and response rates was extracted from SAMHSA's PDF reports. Additionally, population statistics and geographical details were sourced from Wikipedia. Links to these data sources are listed below:
 
 * [TEDS-D DATA](https://www.datafiles.samhsa.gov/dataset/treatment-episode-data-set-admissions-2020-teds-2020-ds0001)
 * [Facility Data](https://www.samhsa.gov/data/sites/default/files/reports/rpt35969/2020%20NSSATS%20State%20Profiles_FINAL.pdf)
@@ -46,7 +46,7 @@ In the process of preparing the TEDS-D dataset for analysis, I had a few data-wr
 **Problem 2: Significant amount of missing data**
 >**Solution: While this might not be ideal as some important variables may have been lost, I excluded records with missing values in any of the predictors and outcome variables. This ensured the integrity of the data used for analysis.**
 
-**Problem 3 No single source providing information on the total treatment facility count by state.**
+**Problem 3 No single source provided information on the total treatment facility count by state.**
 >**Solution: To overcome this challenge, data was extracted from PDF reports to acquire details on the number of treatment facilities surveyed by The Substance Abuse and Mental Health Services Administration and response rates. By combining response rates with the count of facilities surveyed, the total number of treatment facilities for each state was accurately computed.**
 
 **Problem 4: Misspelled state names and special characters within the dataset**
@@ -71,7 +71,7 @@ Boxplot analysis suggests that there could be disparities in the distribution of
 
 In the data preprocessing phase, several essential steps were taken to prepare the dataset for machine learning modeling. These steps included calculating the population per square mile, selecting relevant columns, creating dummy variables for categorical features, standardizing numeric attributes, and encoding the target variable.
 
-## 5. Modelling & Evaluation
+## 5. Modeling & Evaluation
 [Modelling Report](https://github.com/chicofanito/Capstone-2/blob/076e87994a52d55b0afb9871d50bf36c89e0c72c/data/Capstone%202%20-%20Substance%20Use%20Treatment%20-%20Modeling.ipynb)
 
 This is a classification problem as we are trying to predict treatment outcomes (complete or incomplete). I explored these
@@ -82,7 +82,7 @@ conventional machine learning models to build the model and compare performances
 * Naive Bayes
 * Gradient Boosting
 
-The Random Forest and Gradient Boosting models outperformed the other models. I choose to pursue the Random Forest Tree as my final algorithm. 
+The Random Forest and Gradient Boosting models outperformed the other models. I chose to pursue the Random Forest Tree as my final algorithm. 
 
 ![image](https://github.com/chicofanito/Capstone-2/assets/59300889/2dcbd400-007c-4d5a-956e-53183e80c801)
 
@@ -90,7 +90,7 @@ The Random Forest and Gradient Boosting models outperformed the other models. I 
 ## 6. Hyperparameter Tuning Random Forest Model
 
 I utilized RandomizedSearchCV to tune the model with a randomized search over hyperparameters to reduce the computational cost compared to using grid search. 
-While accuracy increased slightly, ROC-AUC Score decreased after hyper tuning using the random search. The decrease in the ROC-AUC score after hyperparameter tuning using random search could be due to the randomness involved in the search process. Randomized search explores a random subset of the hyperparameter space, and in some cases, it may not find hyperparameters that improve the model's performance on your specific dataset.
+While accuracy increased slightly, ROC-AUC Score decreased after hypertuning using the random search. The decrease in the ROC-AUC score after hyperparameter tuning using random search could be due to the randomness involved in the search process. Randomized search explores a random subset of the hyperparameter space, and in some cases, it may not find hyperparameters that improve the model's performance on your specific dataset.
 Hence, I performed cross-validation to get a more stable estimate of the model's performance. This helped ensure that the hyperparameters were chosen based on more robust performance estimates.
 I performed 5-fold cross-validation on your Random Forest model, and the results indicate that the mean ROC-AUC score of approximately 0.879 suggests that your Random Forest model is performing well on the cross-validated subsets of your training data. The standard deviation is relatively small, indicating that the model's performance is consistent across different folds. This information provides more confidence in the model's predictive ability and its stability when applied to unseen data.
 
