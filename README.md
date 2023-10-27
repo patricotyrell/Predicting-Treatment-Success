@@ -123,7 +123,10 @@ good balance, but further optimization may enhance overall performance. Lastly, 
 77.33%, suggests the model's ability to distinguish between the two classes is moderately effective, but fine-tuning could
 boost this aspect of the model.
 
-![image](https://github.com/chicofanito/Capstone-2/assets/59300889/83210e72-05eb-4fd7-8ecd-7863e4517602)  ![image](https://github.com/chicofanito/Capstone-2/assets/59300889/c9af7573-2a12-4750-9ff8-79bf669ae325)
+<img width="446" alt="image" src="https://github.com/patricotyrell/Capstone-2/assets/59300889/a40a96f9-4e2e-4fc1-92b1-da3a53a80d7b">
+
+<img width="445" alt="image" src="https://github.com/patricotyrell/Capstone-2/assets/59300889/643f4077-a9b5-4e09-b9cb-2c80300e7f14">
+
 
 ## 9. Future Directions
 
