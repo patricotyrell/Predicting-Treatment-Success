@@ -61,7 +61,7 @@ The data indicates an improvement in completion rates beyond the age of 44, with
 ![image](https://github.com/chicofanito/Capstone-2/assets/59300889/064818bf-6c9a-4255-b8cc-3fafb3d7ba17)
 
 
-Boxplot analysis suggests that there could be disparities in the distribution of treatment facilities per area between cases of completed and incomplete treatment.
+Boxplot analysis suggests that there could be disparities in the distribution of treatment facilities per population between cases of completed and incomplete treatment.
 
 ![image](https://github.com/chicofanito/Capstone-2/assets/59300889/18ccca22-9a6a-4640-bd46-4da24ec39378)
 
